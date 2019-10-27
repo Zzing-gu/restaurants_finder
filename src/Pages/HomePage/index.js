@@ -1,22 +1,54 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 
-export default function HomePage() {
+//var [geo, setGeo] = useState({ lat: 37.674652, lng: 126.766636, zoom: 19 })
+//const position = [geo.lat, geo.lng]
 
-    var [geo, setGeo] = useState({lat: 51.505, lng: -0.09, zoom: 13})
-    var position = [geo.lat, geo.lng]
+var geo = {
+    lat:37.674652,
+    lng:126.766636,
+    zoom:19
+}
+const position = [geo.lat, geo.lng]
 
-    return (
+// export default function HomePage() {
+
+//     var [geo, setGeo] = useState({ lat: 37.674652, lng: 126.766636, zoom: 19 })
+//     const position = [geo.lat, geo.lng]
+
+//     return (
+//         <Map className="map" center={position} zoom={geo.zoom}>
+//             <TileLayer
+//                 attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+//                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+//             />
+//             <Marker position={[geo.lat, geo.lng]}>
+//                 <Popup>
+
+//                     grgegrergrg
+//                 </Popup>
+//             </Marker>
+//         </Map>
+//     )
+// }
+
+export default class HomePage extends React.Component {
+
+    render(){
+        return(
+
         <Map className="map" center={position} zoom={geo.zoom}>
             <TileLayer
                 attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={position}>
+            <Marker position={[geo.lat, geo.lng]}>
                 <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
+
+                    grgegrergrg
+                </Popup>
             </Marker>
         </Map>
-    )
+        )
+    }
 }

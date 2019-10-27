@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.5.1",
     "leaflet": "^1.5.1",
+    "rc-dock": "^2.4.4",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-leaflet": "^2.5.0",
