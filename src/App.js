@@ -7,6 +7,7 @@ import 'rc-dock/dist/rc-dock.css'
 import {DockLayout} from 'rc-dock'
 
 import HomePage from './Pages/HomePage'
+import ResPage from './Pages/ResPage'
 
 
 let tab = {
@@ -23,8 +24,13 @@ let layout = {
         size: 1000,
         tabs: [
           {
-            ...tab, id: 't5', title: 'basic demo', content: (
+             id: 't5', title: 'map page', content: (
               <HomePage/>
+            ),
+          },
+          {
+             id: 't6', title: 'res page', content: (
+              <ResPage/>
             ),
           },
          
@@ -33,7 +39,9 @@ let layout = {
       },
       {
         size: 200,
-        tabs: [{...tab, id: 't8', title: 'Tab 8'}],
+        tabs: [{ id: 't8', title: 'Tab 8', content: (
+          <div>card page</div>
+        )}],
       },
     ]
   },

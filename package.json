@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.31",
     "leaflet": "^1.5.1",
     "rc-dock": "^2.4.4",
     "react": "^16.10.2",
