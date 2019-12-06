@@ -8,6 +8,7 @@ import {DockLayout} from 'rc-dock'
 
 import HomePage from './Pages/HomePage'
 import ResPage from './Pages/ResPage'
+import CardPage from './Pages/CardPage'
 
 
 let tab = {
@@ -40,7 +41,7 @@ let layout = {
       {
         size: 200,
         tabs: [{ id: 't8', title: 'Tab 8', content: (
-          <div>card page</div>
+          <CardPage/>
         )}],
       },
     ]
